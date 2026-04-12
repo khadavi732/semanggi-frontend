@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <style>
+    body { background-color: #121417;}
+    .bg-gradient-glow1 {
+      background: radial-gradient(circle at center, #1a3a1a 0%, #121417 70%);
+    }
+    .bg-glow2 {
+      background: radial-gradient(circle at right, rgba(165,214,167,0.5) 0%, rgba(26,29,36,0.5) 70%);
+    }
+  </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+
+<body class="text-white font-sans">
+<nav id="navbar"  class="sticky top-0 z-50"></nav>
+
+<section class="relative flex flex-col items-start justify-center bg-gradient-glow1 h-[500px] px-10">
+
+  <!-- Background -->
+  <div class="absolute inset-0 overflow-hidden">
+    <img 
+      src="assets/WhatsApp Image 2026-04-12 at 16.31.52.jpeg" 
+      class="w-full h-50 opacity-20 object-cover"
+    >
+    <div class="absolute inset-0 bg-black/40"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-2xl">
+
+    <h1 class="text-4xl font-bold mb-6">
+      TENTANG KAMI
+    </h1>
+
+    <div class="bg-gray-800/80 w- p-10 rounded-xl mb-6">
+      <h2 class="text-white font-semibold mb-2 text-center">VISI</h2>
+      <p class="text-sm text-gray-300">
+        Menjadi komunitas mahasiswa yang aktif, produktif, dan berkembang bersama melalui kolaborasi nyata, serta mampu menciptakan dampak melalui karya, pengetahuan, dan kontribusi sosial.
+      </p>
+    </div>
+    <div class="bg-gray-800/80 p-6 rounded-xl mb-6">
+      <h2 class="text-white font-semibold mb-2 text-center">VISI</h2>
+      <ol class="text-sm text-gray-300">
+        <li>Membangun sistem project yang konsisten dan berkelanjutan</li>
+        <li>Mengembangkan skill setiap anggota sesuai minat dan potensinya</li>
+        <li>Menciptakan budaya diskusi yang solutif, bukan sekadar opini</li>
+        <li>Mendokumentasikan setiap proses menjadi konten yang bernilai</li>
+        <li>Menjadi wadah kolaborasi, eksplorasi, dan kontribusi</li>
+      </ol>
+    </div>
+    <div class="bg-gray-800/80 p-6 rounded-xl">
+      <h2 class="text-white font-semibold mb-2 text-center">VISI</h2>
+      <p class="text-sm text-gray-300">
+        Menjadi komunitas mahasiswa yang aktif, produktif, dan berkembang bersama melalui kolaborasi nyata, serta mampu menciptakan dampak melalui karya, pengetahuan, dan kontribusi sosial.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<div id="footer"></div>
+
+
+
+
+
+
+  <script>
+    fetch("components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+
+    fetch("components/footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+    
+</body>
+</html>
+

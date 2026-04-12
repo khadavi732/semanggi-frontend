@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website_semanggi_forum</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    body { background-color: #121417;}
+    .bg-gradient-glow1 {
+      background: radial-gradient(circle at center, #1a3a1a 0%, #121417 70%);
+    }
+    .bg-glow2 {
+      background: radial-gradient(circle at right, rgba(165,214,167,0.5) 0%, rgba(26,29,36,0.5) 70%);
+    }
+  </style>
+</head>
+<body class="text-white font-sans">
+
+  <!-- navbar -->
+  <nav id="navbar" class="sticky top-0 z-50"></nav>
+
+  <!-- section -->
+  <section class="flex flex-col items-center text-center py-20 bg-gradient-glow1 relative">
+
+    <!-- glow tengah -->
+    <div class="absolute w-40 h-40 bg-green-400 opacity-20 blur-3xl rounded-full"></div>
+
+    <div class="mb-8 z-10">
+      <img src="assets/SMGI_hp-.png" class="w-32 h-32 object-contain mx-auto">
+    </div>
+
+    <h1 class="text-4xl font-serif text-[rgb(109,190,69)] tracking-widest mb-2 z-10">
+      SEMANGGI FORUM
+    </h1>
+
+    <p class="text-gray-400 text-sm mb-6 z-10">
+      ekosistem untuk berkembang
+    </p>
+
+    <p class="text-gray-300 text-sm max-w-xl mx-auto mb-10 z-10">
+      Forum kolaboratif mahasiswa untuk berkembang melalui project nyata, diskusi, dan kontribusi.
+    </p>
+
+    <!-- cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full px-6 z-10">
+      <div class="bg-gray-800/50 border-b-4 border-green-600 p-8 rounded-2xl relative text-center">
+        <p class="absolute top-2 right-2 text-3xl">💡</p>
+        Tempat Ide diuji
+      </div>
+      <div class="bg-gray-800/50 border-b-4 border-green-600 p-8 rounded-2xl relative text-center">
+        <p class="absolute top-2 right-2 text-3xl">🧐</p>
+        Tempat Skill diasah
+      </div>
+      <div class="bg-gray-800/50 border-b-4 border-green-600 p-8 rounded-2xl relative text-center">
+        <p class="absolute top-2 right-2 text-3xl">😎</p>
+        Tempat Karakter dibentuk
+      </div>
+    </div>
+
+    <!-- Ajakan -->
+    <div class="mt-16 text-center z-10">
+      <p class="text-sm text-gray-400 mb-6 italic">
+        Kami tidak mencari yang sudah sempurna, kami mencari yang siap berkembang.
+      </p>
+      <button class="bg-green-500 hover:bg-green-600 px-12 py-3 rounded-xl font-bold uppercase tracking-widest shadow-lg transition active:shadow-green-700/50 ">
+        GABUNG
+      </button>
+    </div>
+  </section>
+
+  <!-- PROJECT -->
+  <section class="py-24 px-10 max-w-6xl mx-auto relative">
+
+    <!-- glow hijau -->
+    <div class=""></div>
+
+    <h2 class="text-center text-sm font-bold tracking-[0.3em] mb-16 uppercase relative z-10">
+      Our Project
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 relative z-10">
+
+      <div class="bg-[#24272c] p-6 rounded-xl text-center shadow-lg shadow-green-500/50">
+        <h3 class="font-bold text-sm mb-2">THE REST AREA</h3>
+        <p class="text-[10px] text-gray-400 mb-6">
+          video cinematic seorang mahasiswa yang...<span class="text-green-500 cursor-pointer"><a href="project.html">selengkapnya</a></span></p>
+        </p>
+        <img src="assets/WhatsApp Image 2026-03-19 at 18.01.55.jpeg" class="rounded-lg h-32 w-full object-cover">
+      </div>
+
+      <div class="bg-[#24272c] p-6 rounded-xl border border-gray-700 shadow-lg shadow-green-500/50">
+                <h3 class="font-bold text-sm mb-2 uppercase text-center">Website SMGGI</h3>
+                <p class="text-[10px] text-gray-400 mb-6">website resmi semanggi dan juga sebagai portofolio... <span  class="text-green-500 cursor-pointer"> <a href="project.html">selengkapnya</a></span></p>
+                <div class="bg-black rounded-lg h-32 flex items-center justify-center border border-gray-600">
+                     <img src="assets/SMGI_hp-removebg-preview.png" alt="Semanggi Logo" class="w-20 h-20 logo-bright shadow-lg object-contain">
+                </div>
+            </div>
+
+      <div class="bg-[#24272c] p-6 rounded-xl text-center shadow-lg shadow-green-500/50 ">
+        <h3 class="font-bold text-sm mb-2 uppercase">Game of Story</h3>
+        <p class="text-[10px] text-gray-400 mb-6">
+          game tentang sejarah bangsa...<span class="text-green-500 cursor-pointer"><a href="project.html">selengkapnya</a></span></p>
+        </p>
+        <div class="h-32 rounded-lg bg-gradient-to-br from-orange-200 via-green-200 to-green-400"></div>
+      </div>
+
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-t border-gray-800 pt-8 relative z-10">
+      <p class="text-xs text-gray-400 italic max-w-md text-center md:text-left">
+        Kami percaya bahwa setiap individu memiliki potensi unik yang berkembang dalam lingkungan yang tepat.
+      </p>
+      <a href="project.html" class="bg-green-600/30 hover:bg-green-600/50 px-6 py-2 rounded-full text-[10px] transition">
+        Explore →
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ourr teamm -->
+<section class="py-20 px-10 text-center">
+        <h2 class="text-sm font-bold tracking-[0.3em] mb-16 uppercase">Our Team</h2>
+        <div class="flex flex-wrap justify-center gap-12 mb-16">
+            <div class="w-32 h-32 bg-green-200/50 rounded-full"></div>
+            <div class="w-32 h-32 bg-green-200/50 rounded-full"></div>
+            <div class="w-32 h-32 bg-green-200/50 rounded-full"></div>
+            <div class="w-32 h-32 bg-green-200/50 rounded-full"></div>
+        </div>
+        <div class="flex justify-end max-w-6xl mx-auto">
+            <a href="about.html" class="bg-green-600/30 hover:bg-green-600/50 px-6 py-2 rounded-full text-[10px] flex items-center transition-all">
+                About <span class="ml-2">→</span>
+            </a>
+        </div>
+    </section>
+
+
+
+  <div id="footer"></div>
+
+
+
+
+
+
+  <script>
+    fetch("components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+
+    fetch("components/footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+
+</body>
+
+
+
+</html>
