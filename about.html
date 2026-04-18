@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
 
-    <style>
-    body { background-color: #121417;}
+  <style>
+    body { background-color: #121417; }
     .bg-gradient-glow1 {
       background: radial-gradient(circle at center, #1a3a1a 0%, #121417 70%);
     }
@@ -14,82 +14,147 @@
       background: radial-gradient(circle at right, rgba(165,214,167,0.5) 0%, rgba(26,29,36,0.5) 70%);
     }
   </style>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
-
 <body class="text-white font-sans">
-<nav id="navbar"  class="sticky top-0 z-50"></nav>
+  
+  <nav id="navbar" class="sticky top-0 z-50"></nav>
 
-<section class="relative flex flex-col items-start justify-center bg-gradient-glow1 h-[500px] px-10">
+  
+  <section class="relative flex flex-col justify-center bg-gradient-glow1 w-full px-5 :px-5 py-10 ">
+    
 
-  <!-- Background -->
-  <div class="absolute inset-0 overflow-hidden">
-    <img 
-      src="assets/WhatsApp Image 2026-04-12 at 16.31.52.jpeg" 
-      class="w-full h-50 opacity-20 object-cover"
-    >
-    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <img 
+        src="assets/gambar2.jpeg" 
+        alt="Background"
+        class="w-full h-60 opacity-20 object-cover"
+      />
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    
+    <div class="relative z-10 max-w-2xl pt-6 ">
+      <h1 class="text-4xl font-bold ml-5 tracking-widest">TENTANG KAMI</h1>
+    </div>
+
+    
+    <div class="relative z-10 flex flex-col  gap-5 mt-10 w-full max-w-5xl mx-auto px-2">
+      
+      <div class="w-full md:w-[400px]  h-[350px] md:h-auto relative hidden md:flex items-center justify-center">
+  <model-viewer 
+    src="assets/semanggi3d.glb" 
+    alt="3D Clover Model"
+    auto-rotate 
+    camera-controls 
+    disable-zoom
+    shadow-intensity="1.2"
+    class="w-[320px] h-[320px] md:w-full md:h-full outline-none "
+    style="--poster-color: transparent;"
+  ></model-viewer>
+  
+  
+  <div class="absolute -right-20 top-5 w-[200px] h-[200px] bg-green-500/20 blur-[80px] rounded-full pointer-events-none"></div>
+</div>
+  
+<div class="relative z-10 flex flex-col md:flex-row gap-8 mt-10 w-full max-w-5xl mx-auto px-2">
+
+  <!-- TEXT -->
+  <div class="flex-1 bg-[rgba(26,29,36,1)] p-6 rounded-xl">
+    <h2 class="text-white text-2xl font-bold mb-6">
+      Selamat datang di <span class="text-green-500">SEMANGGI</span> FORUM🌿
+    </h2>
+
+    <p class="text-gray-300 text-sm leading-relaxed">
+      Semanggi Mind adalah forum kolaboratif yang dibangun oleh mahasiswa dengan semangat untuk berkembang bersama melalui project nyata, diskusi bermakna, dan kontribusi sosial.
+
+Banyak orang punya potensi. Tapi sedikit yang punya sistem. Di sinilah kami membangun itu — perlahan, metodis, dengan rasa hormat pada proses. Dari misteri awal, kami membawa kejelasan yang membuat ide berkelanjutan.
+    </p>
   </div>
 
-  <!-- Content -->
-  <div class="relative z-10 max-w-2xl">
+  <!-- 3D (ONLY MD+) -->
+  <div class="hidden md:flex flex-1 items-center justify-center relative min-h-[300px]">
 
-    <h1 class="text-4xl font-bold mb-6">
-      TENTANG KAMI
-    </h1>
+    <model-viewer 
+      src="assets/semanggi3d.glb" 
+      auto-rotate 
+      camera-controls 
+      disable-zoom
+      shadow-intensity="1.2"
+      class="w-[280px] h-[280px] md:w-[320px] md:h-[320px]"
+      style="--poster-color: transparent;">
+    </model-viewer>
 
-    <div class="bg-gray-800/80 w- p-10 rounded-xl mb-6">
-      <h2 class="text-white font-semibold mb-2 text-center">VISI</h2>
-      <p class="text-sm text-gray-300">
-        Menjadi komunitas mahasiswa yang aktif, produktif, dan berkembang bersama melalui kolaborasi nyata, serta mampu menciptakan dampak melalui karya, pengetahuan, dan kontribusi sosial.
-      </p>
-    </div>
-    <div class="bg-gray-800/80 p-6 rounded-xl mb-6">
-      <h2 class="text-white font-semibold mb-2 text-center">VISI</h2>
-      <ol class="text-sm text-gray-300">
-        <li>Membangun sistem project yang konsisten dan berkelanjutan</li>
-        <li>Mengembangkan skill setiap anggota sesuai minat dan potensinya</li>
-        <li>Menciptakan budaya diskusi yang solutif, bukan sekadar opini</li>
-        <li>Mendokumentasikan setiap proses menjadi konten yang bernilai</li>
-        <li>Menjadi wadah kolaborasi, eksplorasi, dan kontribusi</li>
-      </ol>
-    </div>
-    <div class="bg-gray-800/80 p-6 rounded-xl">
-      <h2 class="text-white font-semibold mb-2 text-center">VISI</h2>
-      <p class="text-sm text-gray-300">
-        Menjadi komunitas mahasiswa yang aktif, produktif, dan berkembang bersama melalui kolaborasi nyata, serta mampu menciptakan dampak melalui karya, pengetahuan, dan kontribusi sosial.
-      </p>
-    </div>
+    <!-- Glow -->
+    <div class="absolute w-[200px] h-[200px] bg-green-500/20 blur-[80px] rounded-full"></div>
 
   </div>
 
-</section>
+</div>
+ <div class="relative z-50 flex flex-col  gap-5 mt-10  max-w-5xl mx-auto px-2 w-full "></div>
+
+    <div class="flex flex-col gap-6 items-center relative w-full max-w-5xl mx-auto">
+      <div class="bg-[rgba(26,29,36,1)] p-6 rounded-xl">
+        <h2 class="text-white font-semibold text-center mb-2">VISI</h2>
+        <p class="text-sm text-gray-300 text-center">
+          Menjadi komunitas mahasiswa yang aktif, produktif, dan berkembang bersama melalui kolaborasi nyata, serta mampu menciptakan dampak melalui karya, pengetahuan, dan kontribusi sosial.
+        </p>
+      </div>
+
+     
+      <div class="bg-[rgba(26,29,36,1)] p-6 rounded-xl w-full">
+        <h2 class="text-white font-semibold text-center mb-2">MISI</h2>
+        <ol class="list-decimal list-inside space-y-2 text-sm tracking-widest text-gray-300 px-2">
+          <li>Membangun sistem project yang konsisten dan berkelanjutan</li>      
+          <li>Mengembangkan skill setiap anggota sesuai minat dan potensinya</li>
+          <li>Menciptakan budaya diskusi yang solutif, bukan sekadar opini</li>
+          <li>Mendokumentasikan setiap proses menjadi konten yang bernilai</li>
+          <li>Menjadi wadah kolaborasi, eksplorasi, dan kontribusi</li>
+        </ol>
+      </div>
+
+      
+      <div class="bg-[rgba(26,29,36,1)] p-6 rounded-xl w-full">
+        <h2 class="text-white font-semibold text-center mb-2">TUJUAN</h2>
+        <ol class="list-decimal list-inside space-y-2 text-sm tracking-widest text-gray-300 px-2">
+          <li>Menghasilkan project nyata</li>
+          <li>Mengembangkan skill secara terarah</li>
+          <li>Membangun relasi dan peluang</li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
 
 
-
-
-<div id="footer"></div>
-
-
-
-
-
+  <div id="footer"></div>
 
   <script>
-    fetch("components/navbar.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("navbar").innerHTML = data;
-      });
+  // LOAD NAVBAR
+  fetch("components/navbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
 
-    fetch("components/footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer").innerHTML = data;
-      });
-  </script>
-    
+      // INIT MENU SETELAH NAVBAR MASUK
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('mobile-menu');
+
+      if (btn && menu) {
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      }
+    });
+
+  // LOAD FOOTER
+  fetch("components/footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
 </body>
 </html>
-

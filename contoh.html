@@ -1,160 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Semanggi Forum</title>
-    <style>
-        body { background-color: #121417; }
-        .bg-gradient-glow {
-            background: radial-gradient(circle at center, #1a3a1a 0%, #121417 70%);
-        }
-    </style>
-</head>
-<body class="text-white font-sans">
+<section class="portfolio-card">
+  
+  <!-- Judul & Intro (Opsional, sesuai gambar bagian atas) -->
+  <div class="card-header">
+    <h2>THE REST AREA</h2>
+    <p class="intro-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+  </div>
 
-    <nav class="flex justify-between items-center px-10 py-6">
-        <div class="text-green-500 font-bold text-sm leading-tight">
-            SEMANGGI<br>FORUM
-        </div>
-        <div class="space-x-8 text-xs font-semibold text-green-400 uppercase tracking-widest">
-            <a href="#" class="hover:text-white">Home</a>
-            <a href="#" class="hover:text-white">About</a>
-            <a href="#" class="hover:text-white">Project</a>
-            <a href="#" class="hover:text-white">System</a>
-        </div>
-    </nav>
+  <!-- Container Utama Flexbox -->
+  <div class="card-body">
+    
+    <!-- BAGIAN KIRI: Teks & Pagination -->
+    <div class="text-section">
+      <p class="body-text">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries...
+      </p>
+      
+      <div class="pagination">
+        <span>&#8592;</span>
+        <span>Folder (TIDAK DIBAKI)</span>
+        <span>&#8594;</span>
+      </div>
+    </div>
 
-    <section class="flex flex-col items-center text-center py-20 bg-gradient-glow">
-        <div class="mb-6">
-            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-[0_0_50px_rgba(255,255,255,0.3)]">
-                <span class="text-4xl">☘️</span>
-            </div>
-        </div>
-        <h1 class="text-4xl font-serif text-green-500 tracking-widest mb-2">SEMANGGI FORUM</h1>
-        <p class="text-gray-400 text-sm mb-12 italic">ekosistem untuk berkembang</p>
+    <!-- BAGIAN KANAN: 4 Kotak Gambar -->
+    <div class="image-section">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
 
-        <p class="max-w-2xl text-sm text-gray-300 leading-relaxed mb-16 px-4">
-            Forum kolaboratif mahasiswa untuk berkembang melalui project nyata, diskusi, dan kontribusi.
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-10 max-w-5xl w-full">
-            <div class="bg-gray-800/50 border-b-4 border-green-700 p-8 rounded-2xl relative">
-                <span class="absolute top-4 right-4 text-2xl">💡</span>
-                <p class="text-sm font-semibold mt-4">Tempat ide diuji</p>
-            </div>
-            <div class="bg-gray-800/50 border-b-4 border-green-700 p-8 rounded-2xl relative">
-                <span class="absolute top-4 right-4 text-2xl">💡</span>
-                <p class="text-sm font-semibold mt-4">Tempat skill diasah</p>
-            </div>
-            <div class="bg-gray-800/50 border-b-4 border-green-700 p-8 rounded-2xl relative">
-                <span class="absolute top-4 right-4 text-2xl">💡</span>
-                <p class="text-sm font-semibold mt-4">Tempat karakter dibentuk</p>
-            </div>
-        </div>
-
-        <div class="mt-20">
-            <p class="text-sm text-gray-400 mb-6 italic">Kami tidak mencari yang sudah sempurna, kami mencari yang siap berkembang.</p>
-            <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-12 rounded-xl transition-all shadow-lg uppercase tracking-widest">
-                GABUNG
-            </button>
-        </div>
-    </section>
-
-    <section class="py-24 px-10 max-w-6xl mx-auto">
-        <h2 class="text-center text-sm font-bold tracking-[0.3em] mb-16 uppercase">Our Project</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div class="bg-[#24272c] p-6 rounded-xl">
-                <h3 class="font-bold text-sm mb-2">THE REST AREA</h3>
-                <p class="text-[10px] text-gray-400 mb-6">video cinematic seorang mahasiswa yang... <span class="text-green-500 cursor-pointer">selengkapnya</span></p>
-                <div class="bg-white rounded-lg h-32 flex items-center justify-center">
-                    <img src="https://via.placeholder.com/150x80?text=Storyboard" alt="rest-area" class="opacity-50">
-                </div>
-            </div>
-            <div class="bg-[#24272c] p-6 rounded-xl border border-gray-700">
-                <h3 class="font-bold text-sm mb-2 uppercase">Website SMGGI</h3>
-                <p class="text-[10px] text-gray-400 mb-6">website resmi semanggi dan juga sebagai portofolio... <span class="text-green-500 cursor-pointer">selengkapnya</span></p>
-                <div class="bg-black rounded-lg h-32 flex items-center justify-center border border-gray-600">
-                     <span class="text-3xl">☘️</span>
-                </div>
-            </div>
-            <div class="bg-[#24272c] p-6 rounded-xl">
-                <h3 class="font-bold text-sm mb-2 uppercase">Game of Story</h3>
-                <p class="text-[10px] text-gray-400 mb-6">game tentang sejarah bangsa yang dibalut... <span class="text-green-500 cursor-pointer">selengkapnya</span></p>
-                <div class="bg-gradient-to-br from-orange-200 via-green-200 to-green-400 rounded-lg h-32"></div>
-            </div>
-        </div>
-
-        <div class="flex justify-between items-center border-t border-gray-800 pt-8">
-            <p class="text-xs text-gray-400 italic max-w-md">Kami percaya bahwa setiap individu memiliki potensi yang unik, dan potensi tersebut akan berkembang lebih cepat ketika berada dalam lingkungan yang tepat.</p>
-            <a href="#" class="bg-green-600/30 hover:bg-green-600/50 px-6 py-2 rounded-full text-[10px] flex items-center transition-all">
-                Explore <span class="ml-2">→</span>
-            </a>
-        </div>
-    </section>
-
-    <section class="py-20 px-10 text-center">
-        <h2 class="text-sm font-bold tracking-[0.3em] mb-16 uppercase">Our Team</h2>
-        <div class="flex flex-wrap justify-center gap-12 mb-16">
-            <div class="w-32 h-32 bg-green-200/50 rounded-full"></div>
-            <div class="w-32 h-32 bg-green-200/50 rounded-full"></div>
-            <div class="w-32 h-32 bg-green-200/50 rounded-full"></div>
-            <div class="w-32 h-32 bg-green-200/50 rounded-full"></div>
-        </div>
-        <div class="flex justify-end max-w-6xl mx-auto">
-            <a href="#" class="bg-green-600/30 hover:bg-green-600/50 px-6 py-2 rounded-full text-[10px] flex items-center transition-all">
-                About <span class="ml-2">→</span>
-            </a>
-        </div>
-    </section>
-
-    <footer class="py-16 border-t border-gray-800 bg-[#0d0f11]">
-        <div class="max-w-6xl mx-auto px-10 grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
-            
-            <div class="flex flex-col justify-between">
-                <div>
-                    <div class="text-green-500 font-bold text-sm leading-tight mb-4">
-                        SEMANGGI<br>FORUM
-                    </div>
-                    <p class="text-[10px] text-gray-500 tracking-widest uppercase">
-                        © 2024 Semanggi Forum.<br>All Rights Reserved.
-                    </p>
-                </div>
-            </div>
-
-            <div class="space-y-4">
-                <h4 class="text-xs font-bold tracking-[0.2em] text-gray-300 uppercase mb-6">Contact Kami</h4>
-                <div class="flex flex-col space-y-3 text-xs text-gray-400">
-                    <a href="mailto:halo@semanggi.com" class="hover:text-green-400 flex items-center transition-colors">
-                        <span class="mr-2">📧</span> halo@semanggi.com
-                    </a>
-                    <a href="https://wa.me/628123456789" class="hover:text-green-400 flex items-center transition-colors">
-                        <span class="mr-2">💬</span> +62 812-3456-789
-                    </a>
-                    <div class="flex items-center">
-                        <span class="mr-2">📍</span> Jakarta, Indonesia
-                    </div>
-                </div>
-            </div>
-
-            <div class="space-y-4">
-                <h4 class="text-xs font-bold tracking-[0.2em] text-gray-300 uppercase mb-6">Social Media</h4>
-                <div class="flex space-x-6 text-gray-400">
-                    <a href="#" class="hover:text-green-400 transition-colors">Instagram</a>
-                    <a href="#" class="hover:text-green-400 transition-colors">LinkedIn</a>
-                    <a href="#" class="hover:text-green-400 transition-colors">YouTube</a>
-                </div>
-            </div>
-
-        </div>
-        
-        <div class="mt-16 text-center">
-            <p class="text-[10px] tracking-[0.5em] text-gray-600 uppercase">Semanggi Forum</p>
-        </div>
-    </footer>
-
-</body>
-</html>
-
+  </div>
+</section>

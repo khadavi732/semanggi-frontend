@@ -1,11 +1,28 @@
-<nav id="navbar" class="flex  justify-between items-center px-10 py-3 sticky top-0 z-50 bg-[#121417]/80 backdrop-blur-sm">
-    <div class="text-[rgb(109,190,69)] font-semibold text-lg leading-tight">
-      SEMANGGI<br>FORUM
-    </div>
-    <div class="space-x-8 text-xs font-semibold uppercase tracking-widest text-[rgb(109,190,69)] ">
-      <a href="index.html" class="hover:text-white">HOME</a>
-      <a href="about.html" class="hover:text-white">ABOUT</a>
-      <a href="project.html" class="hover:text-white">PROJECT</a>
-      <a href="system.html" class="hover:text-white">SYSTEM</a>
-    </div>
-  </nav>
+<nav id="navbar" class="flex justify-between items-center px-6 py-3 sticky top-0 z-50 bg-[#121417]/80 backdrop-blur-sm">
+
+  <!-- Logo -->
+  <div class="text-[rgb(109,190,69)] font-semibold text-lg leading-tight">
+    <img src="/assets/logoresmi.png" alt="Semanggi Logo" class="w-10 h-10 object-contain inline-block mr-2">
+  </div>
+
+  <!-- Desktop Menu -->
+  <div class="hidden md:flex space-x-8 text-xs font-semibold uppercase tracking-widest text-[rgb(109,190,69)]">
+    <a href="index.html" class="hover:text-white">HOME</a>
+    <a href="about.html" class="hover:text-white">ABOUT</a>
+    <a href="project.html" class="hover:text-white">PROJECT</a>
+    <a href="system.html" class="hover:text-white">SYSTEM</a>
+  </div>
+
+  <!-- Burger Button -->
+  <button id="menu-btn" class="md:hidden text-[rgb(109,190,69)] focus:outline-none">
+    ☰
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden flex-col space-y-4 px-6 py-4 bg-[#121417]/95 text-[rgb(109,190,69)] uppercase text-xs font-semibold tracking-widest md:hidden">
+  <a href="index.html" class="hover:text-white">HOME</a>
+  <a href="about.html" class="hover:text-white">ABOUT</a>
+  <a href="project.html" class="hover:text-white">PROJECT</a>
+  <a href="system.html" class="hover:text-white">SYSTEM</a>
+</div>
